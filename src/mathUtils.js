@@ -5,6 +5,10 @@ function add(a, b) {
   return a + b;
 }
 
+function multiply(c, d) {
+  return c + d;
+}
+
 /** Pembagian dengan proteksi bagi nol. */
 function divide(a, b) {
   if (b === 0) throw new RangeError('tidak bisa membagi dengan nol');
