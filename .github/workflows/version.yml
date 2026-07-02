@@ -1,0 +1,15 @@
+name: Version
+
+on:
+  # Case A: setiap push ke tag tertentu
+  push:
+    tags: ['v*.*.*']
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tampilkan pemicu
+        run: |
+          echo "Pipeline dipicu oleh: ${{ github.event_name }}"
+          echo "Branch/Ref: ${{ github.ref }}"
